@@ -4,7 +4,7 @@ var drops = [];
 
 function setup() {
   createCanvas(600,300);
-  frameRate(45);
+  frameRate(60);
 
 } // setup
 
@@ -12,13 +12,11 @@ function setup() {
 function draw() {
   background(51);
 
-
 // make a drop and add to array 
 // 1 per frame 
-for (var i =0; i<5; i++){
-  var drop = new Drop();
-  drops.push(drop); 
-}
+var drop = new Drop();
+drops.push(drop); 
+
 
  
 // show each drop
