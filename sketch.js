@@ -1,33 +1,25 @@
-// vars
-
+// create array for drops
 var drops = []; 
-
 
 
 function setup() {
   createCanvas(600,300);
- 
-
-
-
+  frameRate(45);
 
 } // setup
-
-
-
-
-
 
 
 function draw() {
   background(51);
 
 
-  // make a drop and add to array 
+// make a drop and add to array 
+// 1 per frame 
 for (var i =0; i<5; i++){
   var drop = new Drop();
   drops.push(drop); 
 }
+
  
 // show each drop
 for (var i =0; i<drops.length; i++){
