@@ -19,11 +19,26 @@ function Drop(){
     this.y = my+14;
 } // show
   
-  //dd
-
-  
-
-
+ 
 } // drop
 
+
+
+function Blop(){
+
+this.x = mouseX;
+this.y = rainH;
+
+this.show = function(){
+
+  //draw the circle 
+  fill(153);
+  ellipse(this.x ,this.y,10,10);
+  this.y +=0.5; 
+  // console.log(this.y); 
+
+} // show 
+
+
+} // blops
 

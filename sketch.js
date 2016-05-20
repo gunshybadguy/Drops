@@ -1,8 +1,9 @@
 // create array for drops
 var drops = []; 
+var blops = [];
 var rainX = 0;
 var rainH = 300;
-
+var blopr;
 
 
 function setup() {
@@ -34,6 +35,10 @@ for (var i =0; i<drops.length; i++){
     rainH = rainH-5;
     rainX = rainX+5;
 
+    // call the circle when drop hits water. 
+    var blopp = new Blop(); 
+    blops.push(blopp);
+
 
     } // if
 } // for
@@ -44,6 +49,10 @@ noStroke();
 rect(0,rainH,600,rainX);
 
 
+for (var i =0; i<blops.length; i++){
+    blops[i].show();
+    }
+
 
 } // draw 
 
@@ -51,6 +60,7 @@ function mousePressed(){
   console.log("pressed"); 
   var dropp = new Drop();
   drops.push(dropp); 
+
 
 } // mousepressed
 
